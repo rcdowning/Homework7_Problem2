@@ -18,14 +18,17 @@ int main() {
   int hours, minutes, secs;
 
   // user input for total seconds
+  cout << "This code converts the passed number of seconds into an equivelent number of hours, minutes, and seconds. Please enter the total number of seconds passed. " << endl;
+  cout << "Total seconds = ";  
   cin >> seconds;
 
   // call function
   time(seconds, hours, minutes, secs);
+
+  // output updated values
+  cout << seconds << "seconds = " << hours << "hours " << minutes << "minutes "
+       << secs << " seconds. " << endl;
 }
 
 /****************** User Defined Functions ****************/
-void time(int seconds, int &hours, int &minutes, int &secs) {
-
-  
-}
+void time(int seconds, int &hours, int &minutes, int &secs) {}
